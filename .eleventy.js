@@ -17,6 +17,7 @@ module.exports = function (eleventyConfig) {
     });
 
     return {
+        pathPrefix: "/sample-klinik/",
         dir: {
             input: "src",
             output: "_site"
