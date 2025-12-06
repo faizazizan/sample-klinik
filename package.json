@@ -1,0 +1,14 @@
+{
+  "name": "eleventy-starter",
+  "version": "1.0.0",
+  "description": "A basic Eleventy starter",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "html-minifier": "^4.0.0",
+    "sharp": "^0.34.5"
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "name": "Dental Clinic Ampang",
+    "description": "Klinik Pergigian Moden & Profesional di Ampang. Rawatan selesa, teknologi terkini, dan pasukan berpengalaman.",
+    "url": "https://dentalclinicampang.com",
+    "locale": "ms_MY",
+    "author": "Dr. Ahmad & Partners",
+    "contact": {
+        "phone": "+60123456789",
+        "whatsapp": "60123456789",
+        "whatsapp_message": "Hi, I would like to book an appointment.",
+        "email": "hello@dentalclinicampang.com",
+        "address_line1": "No. 123, Jalan Ampang Utama",
+        "address_line2": "68000 Ampang, Selangor, Malaysia",
+        "map_link": "https://goo.gl/maps/example"
+    },
+    "social": {
+        "facebook": "https://facebook.com/dentalclinicampang",
+        "instagram": "https://instagram.com/dentalclinicampang"
+    }
+}

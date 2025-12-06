@@ -1,0 +1,80 @@
+[
+    {
+        "title": "Pemeriksaan Gigi & Konsultasi",
+        "slug": "pemeriksaan-gigi",
+        "description": "Pemeriksaan menyeluruh kesihatan mulut anda dengan teknologi imaging terkini.",
+        "icon": "🔍",
+        "details": "Pemeriksaan berkala adalah kunci kepada kesihatan gigi jangka panjang. Kami menggunakan kamera intraoral dan X-ray digital untuk mengesan masalah awal sebelum ia menjadi serius.",
+        "benefits": [
+            "Mencegah kerosakan gigi",
+            "Menjimatkan kos rawatan masa depan",
+            "Nasihat penjagaan mulut personalized"
+        ],
+        "price_range": "RM 50 - RM 100"
+    },
+    {
+        "title": "Pemutihan Gigi (Whitening)",
+        "slug": "pemutihan-gigi",
+        "description": "Dapatkan senyuman lebih cerah dan yakin dalam masa satu jam sahaja.",
+        "icon": "✨",
+        "details": "Rawatan pemutihan gigi profesional kami selamat dan berkesan. Kami menawarkan pilihan in-office whitening untuk hasil segera atau take-home kit untuk keselesaan anda.",
+        "benefits": [
+            "Hasil serta-merta",
+            "Selamat untuk enamel",
+            "Meningkatkan keyakinan diri"
+        ],
+        "price_range": "RM 500 - RM 900"
+    },
+    {
+        "title": "Braces & Invisalign",
+        "slug": "braces-ortodontik",
+        "description": "Luruskan gigi anda dengan pilihan braces konvensional atau aligner lutsinar.",
+        "icon": "😁",
+        "details": "Kami menyediakan rawatan ortodontik untuk kanak-kanak dan dewasa. Pilih antara pendakap logam tradisional, seramik, atau Invisalign yang hampir tidak kelihatan.",
+        "benefits": [
+            "Memperbaiki gigitan",
+            "Senyuman lebih menawan",
+            "Meningkatkan kesihatan gusi"
+        ],
+        "price_range": "RM 4,000 - RM 15,000"
+    },
+    {
+        "title": "Rawatan Akar (Root Canal)",
+        "slug": "rawatan-akar",
+        "description": "Selamatkan gigi yang sakit atau rosak teruk daripada dicabut.",
+        "icon": "🦷",
+        "details": "Rawatan akar moden tidak lagi menyakitkan. Ia adalah prosedur untuk membuang jangkitan dari dalam gigi, membersihkan, dan menampalnya semula.",
+        "benefits": [
+            "Menghilangkan sakit gigi serta-merta",
+            "Mengekalkan gigi asli",
+            "Mengelakkan jangkitan merebak"
+        ],
+        "price_range": "RM 600 - RM 1,500"
+    },
+    {
+        "title": "Cabutan Gigi Bongsu",
+        "slug": "cabutan-gigi-bongsu",
+        "description": "Pembedahan kecil yang selamat untuk membuang gigi bongsu yang bermasalah.",
+        "icon": "🏥",
+        "details": "Gigi bongsu yang terimpak boleh menyebabkan kesakitan dan kerosakan pada gigi lain. Pasukan kami berpengalaman dalam melakukan pembedahan ini dengan seminimal ketidakselesaan mungkin.",
+        "benefits": [
+            "Mencegah kesakitan",
+            "Mengelakkan gigi berlapis",
+            "Pemulihan pantas"
+        ],
+        "price_range": "RM 800 - RM 1,200"
+    },
+    {
+        "title": "Implan Pergigian",
+        "slug": "implan-gigi",
+        "description": "Penyelesaian kekal untuk menggantikan gigi yang hilang.",
+        "icon": "🔩",
+        "details": "Implan gigi adalah pengganti akar gigi yang titanium yang kukuh. Ia kelihatan, rasa, dan berfungsi seperti gigi asli anda sendiri.",
+        "benefits": [
+            "Kelihatan semulajadi",
+            "Tahan seumur hidup",
+            "Mengekalkan struktur tulang rahang"
+        ],
+        "price_range": "RM 3,500 - RM 6,000"
+    }
+]

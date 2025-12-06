@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Puan Siti Nurhaliza",
+        "rating": 5,
+        "text": "Saya sangat berpuas hati dengan servis di Dental Clinic Ampang. Dr. Ahmad sangat profesional dan peramah. Prosedur whitening saya berjalan lancar tanpa rasa sakit!",
+        "treatment": "Teeth Whitening"
+    },
+    {
+        "name": "Encik Rahman Abdullah",
+        "rating": 5,
+        "text": "Klinik yang sangat bersih dan moden. Staf sangat mesra dan membantu. Saya datang untuk tampalan dan hasilnya sangat memuaskan. Highly recommended!",
+        "treatment": "Filling"
+    },
+    {
+        "name": "Cik Amira Husna",
+        "rating": 5,
+        "text": "Best dental clinic in Ampang! Peralatan canggih, doktor berpengalaman, dan harga berpatutan. Anak saya yang biasanya takut ke dentist pun sekarang dah berani!",
+        "treatment": "Children's Dental"
+    }
+]

@@ -1,0 +1,59 @@
+---
+layout: base.njk
+pagination:
+    data: services
+    size: 1
+    alias: service
+permalink: "services/{{ service.slug }}/"
+renderData:
+    title: "{{ service.title }}"
+    description: "{{ service.description }}"
+---
+
+<section class="hero" style="padding: 4rem 0; background: var(--color-secondary);">
+    <div class="container text-center">
+        <h1>{{ service.title }}</h1>
+        <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto;">{{ service.description }}</p>
+    </div>
+</section>
+
+<section class="section" style="padding: 4rem 0;">
+    <div class="container">
+        <div class="grid grid-2">
+            <div>
+                <img src="/images/hero-clinic.webp" alt="{{ service.title }}" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
+            </div>
+            <div>
+                <h2 style="color: var(--color-accent-blue);">Kenapa Pilih Rawatan Ini?</h2>
+                <p style="font-size: 1.1rem; margin-bottom: 2rem;">{{ service.details }}</p>
+                
+                <h3 style="margin-bottom: 1rem;">Kelebihan:</h3>
+                <ul style="margin-bottom: 2rem;">
+                    {% for benefit in service.benefits %}
+                    <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                        <span style="color: var(--color-accent-green);">✔</span> {{ benefit }}
+                    </li>
+                    {% endfor %}
+                </ul>
+
+                <div style="background: #f8fafc; padding: 1.5rem; border-radius: var(--radius-md); border-left: 4px solid var(--color-accent-blue);">
+                    <p style="margin: 0; font-weight: 600;">Anggaran Harga: <span style="color: var(--color-accent-blue-dark);">{{ service.price_range }}</span></p>
+                </div>
+
+                <div style="margin-top: 2rem;">
+                    <a href="#contact" class="btn btn-primary">Tempah Sesi Konsultasi</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<nav class="container" aria-label="Breadcrumb" style="padding: 1rem 0;">
+    <ol style="display: flex; gap: 0.5rem; color: var(--color-text-light);">
+        <li><a href="/">Home</a></li>
+        <li>/</li>
+        <li><a href="/services/">Services</a></li>
+        <li>/</li>
+        <li><span aria-current="page" style="color: var(--color-accent-blue);">{{ service.title }}</span></li>
+    </ol>
+</nav>

@@ -1,0 +1,223 @@
+---
+layout: base.njk
+title: Home - Klinik Pergigian Profesional di Ampang
+description: Dental Clinic Ampang menawarkan servis pergigian moden & profesional dengan teknologi terkini. Tempah janji temu hari ini!
+---
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Senyuman Sihat & Menawan Bermula Di Sini</h1>
+                <p>Klinik Pergigian Moden & Profesional di Ampang. Kami komited memberikan rawatan terbaik dengan teknologi terkini demi keselesaan anda.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Tempah Janji Temu</a>
+                    <a href="#services" class="btn btn-secondary">Lihat Servis</a>
+                </div>
+                
+                <div class="hero-badges">
+                    <div class="badge">
+                        <span class="icon">✓</span>
+                        <span>10+ Tahun Pengalaman</span>
+                    </div>
+                    <div class="badge">
+                        <span class="icon">★</span>
+                        <span>4.9/5 Rating Google</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <img src="/images/hero-clinic.webp" alt="Dental Clinic Ampang - Klinik Pergigian Moden" loading="eager">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="section">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="/images/doctor-profile.webp" alt="Dr. Ahmad - Pakar Pergigian Berpengalaman" loading="lazy">
+            </div>
+            
+            <div class="about-text">
+                <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+                    <span class="label">Tentang Kami</span>
+                    <h2>Klinik Pergigian Yang Anda Boleh Percayai</h2>
+                    <p>Di Dental Clinic Ampang, kami menggabungkan kepakaran klinikal dengan teknologi moden untuk memberikan pengalaman rawatan yang selesa dan bebas rasa takut.</p>
+                </div>
+                
+                <div class="about-features">
+                    <div class="feature">
+                        <div class="feature-icon">🛡️</div>
+                        <div class="feature-text">
+                            <h4>Selamat & Bersih</h4>
+                            <p>Protokol sterilisasi hospital-grade untuk keselamatan anda.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature">
+                        <div class="feature-icon">🔬</div>
+                        <div class="feature-text">
+                            <h4>Teknologi Moden</h4>
+                            <p>X-Ray Digital & Intraoral Camera untuk diagnosis tepat.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature">
+                        <div class="feature-icon">👨‍⚕️</div>
+                        <div class="feature-text">
+                            <h4>Doktor Berpengalaman</h4>
+                            <p>Pasukan pakar dengan 10+ tahun pengalaman dalam bidang pergigian.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section id="services" class="section" style="background: var(--color-bg-light);">
+    <div class="container">
+        <div class="section-header">
+            <span class="label">Servis Kami</span>
+            <h2>Rawatan Pergigian Komprehensif</h2>
+            <p>Kami menawarkan pelbagai servis pergigian untuk memastikan senyuman anda sentiasa sihat dan menawan.</p>
+        </div>
+        
+        <div class="services-grid">
+            {% for service in services %}
+            <div class="service-card">
+                <div class="service-icon">{{ service.icon }}</div>
+                <h3>{{ service.title }}</h3>
+                <p>{{ service.description }}</p>
+                <a href="/services/{{ service.slug }}/">
+                    Lihat Detail <span>→</span>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- WHY CHOOSE US SECTION -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <span class="label">Mengapa Pilih Kami</span>
+            <h2>Penjagaan Pergigian Yang Unggul</h2>
+        </div>
+        
+        <div class="benefits-grid">
+            <div class="benefit-item">
+                <div class="benefit-icon">💎</div>
+                <h4>Peralatan Canggih</h4>
+                <p>Teknologi terkini untuk rawatan yang lebih cepat dan selesa</p>
+            </div>
+            
+            <div class="benefit-item">
+                <div class="benefit-icon">🌟</div>
+                <h4>Servis Berkualiti</h4>
+                <p>Standard professinal tinggi dalam setiap prosedur</p>
+            </div>
+            
+            <div class="benefit-item">
+                <div class="benefit-icon">💰</div>
+                <h4>Harga Berpatutan</h4>
+                <p>Pakej rawatan yang sesuai dengan bajet anda</p>
+            </div>
+            
+            <div class="benefit-item">
+                <div class="benefit-icon">📍</div>
+                <h4>Lokasi Strategik</h4>
+                <p>Mudah diakses di pusat Ampang dengan parking luas</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS SECTION -->
+<section id="testimonials" class="section" style="background: var(--color-bg-light);">
+    <div class="container">
+        <div class="section-header">
+            <span class="label">Testimoni</span>
+            <h2>Apa Kata Pesakit Kami</h2>
+        </div>
+        
+        <div class="testimonials-grid">
+            {% for testimonial in testimonials %}
+            <div class="testimonial-card">
+                <div class="stars">
+                    {% for i in range(1, testimonial.rating + 1) %}★{% endfor %}
+                </div>
+                <p class="testimonial-text">"{{ testimonial.text }}"</p>
+                <div class="testimonial-author">{{ testimonial.name }}</div>
+                <div class="testimonial-treatment">{{ testimonial.treatment }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="section">
+    <div class="container">
+        <div class="section-header">
+            <span class="label">Hubungi Kami</span>
+            <h2>Tempah Janji Temu Anda</h2>
+            <p>Sedia untuk senyuman yang lebih sihat? Hubungi kami hari ini untuk konsultasi percuma.</p>
+        </div>
+        
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Maklumat Kami</h3>
+                
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div>
+                        <strong>Alamat</strong>
+                        <p>{{ site.contact.address_line1 }}<br>{{ site.contact.address_line2 }}</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">📞</div>
+                    <div>
+                        <strong>Telefon</strong>
+                        <p><a href="tel:{{ site.contact.phone }}">{{ site.contact.phone }}</a></p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">✉️</div>
+                    <div>
+                        <strong>Email</strong>
+                        <p><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">🕒</div>
+                    <div>
+                        <strong>Waktu Operasi</strong>
+                        <p>Isnin - Sabtu: 9:00 AM - 6:00 PM<br>Ahad: Tutup</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.7866386423!2d101.75!3d3.15!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37d12d6a7d65%3A0x6a2c28666324317!2sAmpang%2C%20Selangor!5e0!3m2!1sen!2smy!4v1625633842139!5m2!1sen!2smy" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WHATSAPP FLOAT BUTTON -->
+<a href="https://wa.me/{{ site.contact.whatsapp | replace('+', '') | replace('-', '') | replace(' ', '') }}" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    💬
+</a>
